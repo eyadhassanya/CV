@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eyad - 14-year-old student passionate about Python, Flask, and AI modeling">
+    <title>Eyad | AI & Programming Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">Eyad</h1>
+            <p class="hero-subtitle">
+                14-year-old student at AMS school passionate about<br>
+                Python, Flask, and AI modeling
+            </p>
+            <button id="cta-button" class="cta-button">View my projects</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="glass-panel">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    Hi, I'm Eyad, a 14-year-old student at AMS school with a deep passion for technology and innovation. 
+                    I specialize in Python development and Flask web frameworks, creating dynamic web applications that solve real-world problems. 
+                    My expertise extends to AI modeling, where I explore machine learning algorithms and natural language processing. 
+                    I'm constantly learning and pushing the boundaries of what's possible with code.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>01065580236</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:eyadhassan@gmail.com">eyadhassan@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="python">
+                    <div class="skill-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <path d="M9.585 11.692h4.328s2.432.039 2.432-2.35V5.391S16.714 3 11.849 3C6.984 3 7.001 3 7.001 3s-2.928-.082-2.928 2.683v3.625h5.856v.75H3.65s-2.3-.26-2.3 4.87 0 5.026 0 5.026s-.127 2.976 2.885 2.976h2.024v-2.617s-.139-2.88 2.844-2.88h4.273s2.718.023 2.718-2.62v-4.37s.47-2.668-2.837-2.668H9.585v2.917zm-.511-5.037c.47 0 .851.381.851.85s-.381.85-.85.85-.85-.381-.85-.85.38-.85.85-.85z" fill="url(#python-gradient)"/>
+                            <path d="M14.415 12.308h-4.328s-2.432-.039-2.432 2.35v3.951s-.369 2.391 4.496 2.391c4.865 0 4.848 0 4.848 0s2.928.082 2.928-2.683v-3.625h-5.856v-.75h6.278s2.3.26 2.3-4.87 0-5.026 0-5.026.127-2.976-2.885-2.976h-2.024v2.617s.139 2.88-2.844 2.88h-4.273s-2.718-.023-2.718 2.62v4.37s-.47 2.668 2.837 2.668h3.672v-2.917zm.511 5.037c-.47 0-.851-.381-.851-.85s.381-.85.85-.85.85.381.85.85-.38.85-.85.85z" fill="url(#python-gradient-2)"/>
+                            <defs>
+                                <linearGradient id="python-gradient" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#387EB8"/>
+                                    <stop offset="1" stop-color="#366994"/>
+                                </linearGradient>
+                                <linearGradient id="python-gradient-2" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFE873"/>
+                                    <stop offset="1" stop-color="#FFD43B"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+
+                <div class="skill-card" data-skill="flask">
+                    <div class="skill-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 22v-5M3 7l9 5m0 0l9-5m-9 5v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Flask</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <div class="skill-card" data-skill="ai">
+                    <div class="skill-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="12" cy="5" r="2" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="12" cy="19" r="2" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="5" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="7.5" cy="7.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="16.5" cy="7.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="7.5" cy="16.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="16.5" cy="16.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">AI Modeling</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <div class="skill-card" data-skill="html">
+                    <div class="skill-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 3l1.778 16L12 21l6.222-2L20 3H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M7 7h10M8 11h8M9 15h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                </div>
+
+                <div class="skill-card" data-skill="css">
+                    <div class="skill-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 3l1.778 16L12 21l6.222-2L20 3H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M7 10h10M7 14h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                </div>
+
+                <div class="skill-card" data-skill="javascript">
+                    <div class="skill-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 16c0 1-1 2-2 2s-2-1-2-2V8h2v8M14 11h2c1 0 2 .5 2 2s-1 2-2 2h-2m0-4v0m0 0v4m0-4h1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="87"></div>
+                    </div>
+                    <span class="skill-percentage">87%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            <circle cx="9" cy="10" r="1" fill="currentColor"/>
+                            <circle cx="12" cy="10" r="1" fill="currentColor"/>
+                            <circle cx="15" cy="10" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">AI Chat Assistant</h3>
+                    <p class="project-description">
+                        An intelligent chatbot built with Python and Flask, featuring natural language processing 
+                        and context-aware responses for seamless user interactions.
+                    </p>
+                    <a href="#" class="project-link">Learn more →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Animated Portfolio Website</h3>
+                    <p class="project-description">
+                        A premium portfolio website featuring Apple-inspired design, smooth GSAP animations, 
+                        and interactive Three.js particle effects.
+                    </p>
+                    <a href="#" class="project-link">View project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">AI Image Recognition App</h3>
+                    <p class="project-description">
+                        Advanced image classification system using deep learning models to identify objects, 
+                        scenes, and patterns with high accuracy.
+                    </p>
+                    <a href="#" class="project-link">Explore →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Python Data Analysis Tool</h3>
+                    <p class="project-description">
+                        Comprehensive data analysis toolkit for processing, visualizing, and extracting insights 
+                        from large datasets using pandas and matplotlib.
+                    </p>
+                    <a href="#" class="project-link">Discover →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="mailto:eyadhassan@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Eyad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
